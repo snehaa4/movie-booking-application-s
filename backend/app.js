@@ -10,6 +10,7 @@ const app = express();
 
 //middlewares
 app.use("/user", userRouter)
+app.use(express.json());
 
 
 mongoose.connect(`mongodb+srv://ansgupta01:${process.env.MONGODB_PASSWORD}@anshika-project.0bdpjx2.mongodb.net /
